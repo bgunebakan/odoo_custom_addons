@@ -21,12 +21,12 @@
         <field name="model">procurement.tender</field>
         <field name="arch" type="xml">
             <search string="Search Tenders">
-                <field name="name" filter_domain="['|', ('name','ilike',self),('no','ilike',self)]" string="Name and Tender No"/>
+                <field name="name" filter_domain="['|', ('name','ilike',self),('no','ilike',self),('supplier','ilike',self)]" string="All"/>
                 <field name="name"/>
                 <field name="no"/>
                 <field name="supplier_id"/>
-                <filter string="Ongoing" name="open" domain="[('status_id.name','!=','Invoiced')]"/>
-                <filter string="Done" name="done" domain="[('status_id.name','=','Invoiced')]"/>
+                <filter string="Ongoing" name="open" domain="[('status_id.name','!=','Paid')]"/>
+                <filter string="Done" name="done" domain="[('status_id.name','=','Paid')]"/>
                 <group expand="0" string="Group By">
                     <filter string="Tender Type" name="type_id" context="{'group_by':'type_id'}"/>
                 </group>
