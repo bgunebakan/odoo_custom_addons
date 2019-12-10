@@ -1,0 +1,463 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* procurement
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0-20191130\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-02 12:29+0000\n"
+"PO-Revision-Date: 2019-12-02 12:29+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: procurement
+#: model:ir.model.fields.selection,name:procurement.selection__procurement_tender__fiscal_year__2014
+msgid "2014"
+msgstr ""
+
+#. module: procurement
+#: model:ir.model.fields.selection,name:procurement.selection__procurement_tender__fiscal_year__2015
+msgid "2015"
+msgstr ""
+
+#. module: procurement
+#: model:ir.model.fields.selection,name:procurement.selection__procurement_tender__fiscal_year__2016
+msgid "2016"
+msgstr ""
+
+#. module: procurement
+#: model:ir.model.fields.selection,name:procurement.selection__procurement_tender__fiscal_year__2017
+msgid "2017"
+msgstr ""
+
+#. module: procurement
+#: model:ir.model.fields.selection,name:procurement.selection__procurement_tender__fiscal_year__2018
+msgid "2018"
+msgstr ""
+
+#. module: procurement
+#: model:ir.model.fields.selection,name:procurement.selection__procurement_tender__fiscal_year__2019
+msgid "2019"
+msgstr ""
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__message_needaction
+msgid "Action Needed"
+msgstr "İşlem bekleniyor"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__activity_ids
+msgid "Activities"
+msgstr "Etkinlikler"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__activity_state
+msgid "Activity State"
+msgstr "Etkinlik Durumu"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__apply_date
+msgid "Apply Date"
+msgstr "Başvuru Tarihi"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__message_attachment_count
+msgid "Attachment Count"
+msgstr "Ek Sayısı"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__auction_datetime
+msgid "Auction Date"
+msgstr "İhale Tarihi"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__auction_location
+msgid "Auction Location"
+msgstr "İhale Yeri"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__auction_no
+msgid "Auction No"
+msgstr "İhale No"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__auction_price
+msgid "Auction Price"
+msgstr "İhale Fiyatı"
+
+#. module: procurement
+#: model_terms:ir.actions.act_window,help:procurement.action_tender
+msgid "Cannot find any Tender."
+msgstr "İhale bulunamadı."
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tendertype__code
+msgid "Code"
+msgstr "Kod"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__contract_date
+msgid "Contract Date"
+msgstr "Sözleşme Tarihi"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_suppliertype__create_uid
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__create_uid
+#: model:ir.model.fields,field_description:procurement.field_procurement_tenderstatus__create_uid
+#: model:ir.model.fields,field_description:procurement.field_procurement_tendertype__create_uid
+msgid "Created by"
+msgstr "Oluşturan"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_suppliertype__create_date
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__create_date
+#: model:ir.model.fields,field_description:procurement.field_procurement_tenderstatus__create_date
+#: model:ir.model.fields,field_description:procurement.field_procurement_tendertype__create_date
+msgid "Created on"
+msgstr "Oluşturulan"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__currency_id
+msgid "Currency"
+msgstr "Para birimi"
+
+#. module: procurement
+#: model:ir.model.fields,help:procurement.field_procurement_tender__auction_datetime
+msgid "Date of Auction"
+msgstr "İhale Tarihi"
+
+#. module: procurement
+#: model:ir.model.fields,help:procurement.field_procurement_tender__contract_date
+msgid "Date of Contract"
+msgstr "Sözleşme Tarihi"
+
+#. module: procurement
+#: model:ir.model.fields,help:procurement.field_procurement_tender__apply_date
+msgid "Date on which tender is applied."
+msgstr "İhalenin başvurulduğu tarih."
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_suppliertype__display_name
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__display_name
+#: model:ir.model.fields,field_description:procurement.field_procurement_tenderstatus__display_name
+#: model:ir.model.fields,field_description:procurement.field_procurement_tendertype__display_name
+msgid "Display Name"
+msgstr "İsim"
+
+#. module: procurement
+#: model_terms:ir.ui.view,arch_db:procurement.tender_search
+msgid "Done"
+msgstr "Tamamlandı"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__fiscal_year
+msgid "Fiscal Year"
+msgstr "Mali Yıl"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__message_follower_ids
+msgid "Followers"
+msgstr "Takipçiler"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Takipçiler (Kanallar)"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Takipçiler (Partnerler)"
+
+#. module: procurement
+#: model_terms:ir.ui.view,arch_db:procurement.tender_search
+msgid "Group By"
+msgstr "Gruplama"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_suppliertype__id
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__id
+#: model:ir.model.fields,field_description:procurement.field_procurement_tenderstatus__id
+#: model:ir.model.fields,field_description:procurement.field_procurement_tendertype__id
+msgid "ID"
+msgstr "ID"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__activity_exception_icon
+msgid "Icon"
+msgstr "Simge"
+
+#. module: procurement
+#: model:ir.model.fields,help:procurement.field_procurement_tender__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: procurement
+#: model:ir.model.fields,help:procurement.field_procurement_tender__message_needaction
+#: model:ir.model.fields,help:procurement.field_procurement_tender__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: procurement
+#: model:ir.model.fields,help:procurement.field_procurement_tender__message_has_error
+#: model:ir.model.fields,help:procurement.field_procurement_tender__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_suppliertype____last_update
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender____last_update
+#: model:ir.model.fields,field_description:procurement.field_procurement_tenderstatus____last_update
+#: model:ir.model.fields,field_description:procurement.field_procurement_tendertype____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_suppliertype__write_uid
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__write_uid
+#: model:ir.model.fields,field_description:procurement.field_procurement_tenderstatus__write_uid
+#: model:ir.model.fields,field_description:procurement.field_procurement_tendertype__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_suppliertype__write_date
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__write_date
+#: model:ir.model.fields,field_description:procurement.field_procurement_tenderstatus__write_date
+#: model:ir.model.fields,field_description:procurement.field_procurement_tendertype__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__message_ids
+msgid "Messages"
+msgstr "Mesajlar"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_suppliertype__name
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__name
+#: model:ir.model.fields,field_description:procurement.field_procurement_tenderstatus__name
+#: model:ir.model.fields,field_description:procurement.field_procurement_tendertype__name
+msgid "Name"
+msgstr "Ad"
+
+#. module: procurement
+#: model_terms:ir.ui.view,arch_db:procurement.tender_search
+msgid "Name and Tender No"
+msgstr "İsim veya İhale No"
+
+#. module: procurement
+#: code:addons/procurement/models/tender.py:0
+#: code:addons/procurement/models/tender.py:0
+#: code:addons/procurement/models/tender.py:0
+#, python-format
+msgid "New"
+msgstr "Yeni"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__no
+msgid "No"
+msgstr "No"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__notes
+msgid "Notes"
+msgstr "Notlar"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Aksiyon Sayısı"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__message_has_error_counter
+msgid "Number of errors"
+msgstr "Hata Sayısı"
+
+#. module: procurement
+#: model:ir.model.fields,help:procurement.field_procurement_tender__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: procurement
+#: model:ir.model.fields,help:procurement.field_procurement_tender__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: procurement
+#: model:ir.model.fields,help:procurement.field_procurement_tender__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: procurement
+#: model_terms:ir.ui.view,arch_db:procurement.tender_search
+msgid "Ongoing"
+msgstr "Devam Eden"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__employee_id
+msgid "Personnel in charge"
+msgstr "İlgili Personel"
+
+#. module: procurement
+#: model:ir.ui.menu,name:procurement.procurement_root
+msgid "Procurement"
+msgstr "Satın Alma"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__responsible_staff
+msgid "Responsible Staff"
+msgstr "Sorumlu Personel"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__activity_user_id
+msgid "Responsible User"
+msgstr "Sorumlu Kullanıcı"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "SMS Gönderme hatası"
+
+#. module: procurement
+#: model_terms:ir.ui.view,arch_db:procurement.tender_search
+msgid "Search Tenders"
+msgstr "İhale Arama"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__status_id
+msgid "Status"
+msgstr "Durum"
+
+#. module: procurement
+#: model:ir.model.fields,help:procurement.field_procurement_tender__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__supplier_type_id
+msgid "Suplier Type"
+msgstr "Tedarikçi Türü"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__supplier_id
+msgid "Supplier"
+msgstr "Tedarikçi"
+
+#. module: procurement
+#: model:ir.model,name:procurement.model_procurement_suppliertype
+msgid "Supplier Type"
+msgstr "Tedarikçi Türü"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__technical_specification
+msgid "Technical Specification "
+msgstr "Şartname"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__technical_specification_name
+msgid "Technical Specification File Name"
+msgstr "Şartname Dosya Adı"
+
+#. module: procurement
+#: model:ir.model,name:procurement.model_procurement_tender
+msgid "Tender Record"
+msgstr "İhale Kaydı"
+
+#. module: procurement
+#: model:ir.model,name:procurement.model_procurement_tenderstatus
+msgid "Tender Status"
+msgstr "İhale Durumu"
+
+#. module: procurement
+#: model:ir.model,name:procurement.model_procurement_tendertype
+#: model_terms:ir.ui.view,arch_db:procurement.tender_search
+msgid "Tender Type"
+msgstr "İhale Türü"
+
+#. module: procurement
+#: model:ir.actions.act_window,name:procurement.action_tender
+#: model:ir.ui.menu,name:procurement.procurement_tender
+#: model_terms:ir.ui.view,arch_db:procurement.tender_form
+#: model_terms:ir.ui.view,arch_db:procurement.tender_tree
+msgid "Tenders"
+msgstr "İhaleler"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tendertype__total
+msgid "Total"
+msgstr "Toplam"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__type_id
+msgid "Type"
+msgstr "Tip"
+
+#. module: procurement
+#: model:ir.model.fields,help:procurement.field_procurement_tender__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__message_unread
+msgid "Unread Messages"
+msgstr "Okunmamış Mesajlar"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: procurement
+#: model:ir.model.fields,help:procurement.field_procurement_tender__website_message_ids
+msgid "Website communication history"
+msgstr ""

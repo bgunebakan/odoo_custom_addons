@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- tree view of the tenders -->
+    <record model="ir.ui.view" id="tender_tree">
+        <field name="name">procurement.tender.view.tree</field>
+        <field name="model">procurement.tender</field>
+        <field name="arch" type="xml">
+            <tree string="Tenders">
+                <field name="type_id"/>
+                <field name="name"/>
+                <field name="no"/>
+                <field name="employee_id"/>
+                <field name="status_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- search view of the tenders -->
+    <record id="tender_search" model="ir.ui.view">
+        <field name="name">procurement.tender.search</field>
+        <field name="model">procurement.tender</field>
+        <field name="arch" type="xml">
+            <search string="Search Tenders">
+                <field name="name" filter_domain="['|', ('name','ilike',self),('no','ilike',self)]" string="Name and Tender No"/>
+                <field name="name"/>
+                <field name="no"/>
+                <filter string="Ongoing" name="open" domain="[('status_id.name','!=','Invoiced')]"/>
+                <filter string="Done" name="done" domain="[('status_id.name','=','Invoiced')]"/>
+                <group expand="0" string="Group By">
+                    <filter string="Tender Type" name="type_id" context="{'group_by':'type_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- form view of the tenders -->
+    <record model="ir.ui.view" id="tender_form">
+        <field name="name">procurement.tender.view.form</field>
+        <field name="model">procurement.tender</field>
+        <field name="arch" type="xml">
+            <form string="Tenders">
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="no" readonly="1"/>
+                        </h1>
+                        <h3>
+                            Supplier:
+                            <field name="supplier_id" readonly="1"/>
+                        </h3>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="no"/>
+                        </group>
+                        <group>
+                            <field name="type_id"/>
+                            <field name="status_id"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                           <field name="apply_date"/>
+                            <field name="fiscal_year"/>
+                        </group>
+                        <group>
+                            <field name="employee_id"/>
+                            <field name="supplier_id"/>
+                            <field name="supplier_type_id"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="auction_no"/>
+                            <field name="auction_datetime"/>
+                            <field name="auction_location"/>
+                            <field name="contract_date"/>
+                        </group>
+                        <group>
+                            <field name="auction_price"/>
+                        <field name="currency_id"/>
+                        </group>
+                    </group>
+
+                    <notebook>
+                        <page string="Notes">
+                            <field name="notes"/>
+                        </page>
+                        <page string="Files">
+                            <field name="file_lines">
+                                <tree editable="bottom">
+                                    <field name="name"/>
+                                    <field name="type"/>
+                                    <field name="file_name" invisible="1"/>
+                                    <field name="file" filename="file_name"/>
+                                    <field name="tender_id" invisible="1"/>
+                                </tree>
+                                <form>
+                                    <group>
+                                        <group>
+                                            <field name="name"/>
+                                            <field name="type"/>
+                                        </group>
+                                        <group>
+                                            <field name="file_name" invisible="1"/>
+                                            <field name="file" filename="file_name"/>
+                                        </group>
+                                    </group>
+                                </form>
+                            </field>
+                        </page>
+                        <page string="Offers">
+                            <field name="offer_lines">
+                                <tree editable="bottom">
+                                    <field name="supplier_id"/>
+                                    <field name="price"/>
+                                    <field name="currency_id"/>
+                                    <field name="vat"/>
+                                    <field name="proforma_file_name" invisible="1"/>
+                                    <field name="proforma_file" filename="proforma_file_name"/>
+                                </tree>
+                                <form>
+                                    <group>
+                                        <group>
+                                            <field name="supplier_id"/>
+                                        </group>
+                                        <group>
+                                            <field name="price"/>
+                                            <field name="currency_id"/>
+                                            <field name="vat"/>
+                                        </group>
+                                        <group>
+                                            <field name="proforma_file_name" invisible="1"/>
+                                            <field name="proforma_file" filename="proforma_file_name"/>
+                                        </group>
+                                    </group>
+                                </form>
+                            </field>
+                        </page>
+                        <page string="Items">
+                            <field name="item_lines">
+                                <tree editable="bottom">
+                                    <field name="product_id"/>
+                                    <field name="product_qty"/>
+                                </tree>
+                                <form>
+                                    <group>
+                                        <group>
+                                            <field name="product_id"/>
+                                        </group>
+                                        <group>
+                                            <field name="product_qty"/>
+                                        </group>
+                                    </group>
+                                </form>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread" options="{'post_refresh': 'recipients'}"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- action of the tenders menu -->
+    <record id="action_tender" model="ir.actions.act_window">
+        <field name="name">Tenders</field>
+        <field name="res_model">procurement.tender</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_empty_folder">
+                Cannot find any Tender.
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="procurement_root" name="Procurement" sequence="0" web_icon="procurement,static/description/icon.png"/>
+        <menuitem id="procurement_tender" name="Tenders" parent="procurement_root" action="action_tender"/>
+
+</odoo>

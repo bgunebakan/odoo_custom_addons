@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <report
+        string="Tender Details"
+        id="report_tender_overview"
+        model="procurement.tender"
+        report_type="qweb-pdf"
+        name="procurement.report_tender"
+        file="procurement.report_tender"
+        print_report_name="'%s %s' % (object.no,object.name)"
+    />
+</odoo>

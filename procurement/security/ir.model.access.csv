@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_procurement_tender,access.procurement.tender,model_procurement_tender,,1,1,1,1
+access_procurement_tendertype,access.procurement.tendertype,model_procurement_tendertype,,1,1,1,1
+access_procurement_tenderstatus,access.procurement.tenderstatus,model_procurement_tenderstatus,,1,1,1,1
+access_procurement_suppliertype,access.procurement.suppliertype,model_procurement_suppliertype,,1,1,1,1
+access_procurement_tender_files,access.procurement.tender.files,model_procurement_tender_files,,1,1,1,1
+access_procurement_tender_offers,access.procurement.tender.offers,model_procurement_tender_offers,,1,1,1,1
+access_procurement_tender_items,access.procurement.tender.items,model_procurement_tender_items,,1,1,1,1

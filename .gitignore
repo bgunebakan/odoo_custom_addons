@@ -102,3 +102,10 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+/addons/
+/om_account_accountant/
+/om_account_asset/
+/om_account_budget/
+/orange_theme_odoo12/
+/web_responsive/
+/accounting_pdf_reports/
