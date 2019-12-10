@@ -21,7 +21,7 @@
         <field name="model">procurement.tender</field>
         <field name="arch" type="xml">
             <search string="Search Tenders">
-                <field name="name" filter_domain="['|', ('name','ilike',self),('no','ilike',self),('supplier','ilike',self)]" string="All"/>
+                <field name="name" filter_domain="['|', ('name','ilike',self),('no','ilike',self),('supplier_id','ilike',self)]" string="All"/>
                 <field name="name"/>
                 <field name="no"/>
                 <field name="supplier_id"/>
