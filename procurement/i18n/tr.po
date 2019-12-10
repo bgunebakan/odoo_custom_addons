@@ -300,7 +300,7 @@ msgstr "Takipçi mi"
 #. module: procurement
 #: model_terms:ir.ui.view,arch_db:procurement.tender_form
 msgid "Items"
-msgstr "Öğeler"
+msgstr "Kalemler"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_suppliertype____last_update

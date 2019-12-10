@@ -24,6 +24,7 @@
                 <field name="name" filter_domain="['|', ('name','ilike',self),('no','ilike',self)]" string="Name and Tender No"/>
                 <field name="name"/>
                 <field name="no"/>
+                <field name="supplier_id"/>
                 <filter string="Ongoing" name="open" domain="[('status_id.name','!=','Invoiced')]"/>
                 <filter string="Done" name="done" domain="[('status_id.name','=','Invoiced')]"/>
                 <group expand="0" string="Group By">
