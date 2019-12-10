@@ -4,16 +4,21 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 13.0-20191130\n"
+"Project-Id-Version: Odoo Server 13.0-20191209\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-02 12:29+0000\n"
-"PO-Revision-Date: 2019-12-02 12:29+0000\n"
+"POT-Creation-Date: 2019-12-10 14:07+0000\n"
+"PO-Revision-Date: 2019-12-10 14:07+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
+
+#. module: procurement
+#: model:ir.actions.report,print_report_name:procurement.report_tender_overview
+msgid "'%s %s' % (object.no,object.name)"
+msgstr ""
 
 #. module: procurement
 #: model:ir.model.fields.selection,name:procurement.selection__procurement_tender__fiscal_year__2014
@@ -46,6 +51,36 @@ msgid "2019"
 msgstr ""
 
 #. module: procurement
+#: model_terms:ir.ui.view,arch_db:procurement.report_tender_overviews
+msgid "<span>Price</span>"
+msgstr "<span>Fiyat</span>"
+
+#. module: procurement
+#: model_terms:ir.ui.view,arch_db:procurement.report_tender_overviews
+msgid "<span>Quantity</span>"
+msgstr "<span>Miktar</span>"
+
+#. module: procurement
+#: model_terms:ir.ui.view,arch_db:procurement.report_tender_overviews
+msgid "<span>Supplier</span>"
+msgstr "<span>Tedarikçi</span>"
+
+#. module: procurement
+#: model_terms:ir.ui.view,arch_db:procurement.report_tender_overviews
+msgid "<strong>Apply Date:</strong>"
+msgstr "<strong>Başvuru Tarihi:</strong>"
+
+#. module: procurement
+#: model_terms:ir.ui.view,arch_db:procurement.report_tender_overviews
+msgid "<strong>Status:</strong>"
+msgstr "<strong>Durum:</strong>"
+
+#. module: procurement
+#: model_terms:ir.ui.view,arch_db:procurement.report_tender_overviews
+msgid "<strong>Type:</strong>"
+msgstr "<strong>Tür:</strong>"
+
+#. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__message_needaction
 msgid "Action Needed"
 msgstr "İşlem bekleniyor"
@@ -53,7 +88,7 @@ msgstr "İşlem bekleniyor"
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__activity_ids
 msgid "Activities"
-msgstr "Etkinlikler"
+msgstr "Eylemler"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__activity_exception_decoration
@@ -63,7 +98,12 @@ msgstr ""
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__activity_state
 msgid "Activity State"
-msgstr "Etkinlik Durumu"
+msgstr "Eylem Durumu"
+
+#. module: procurement
+#: model:ir.model.fields.selection,name:procurement.selection__procurement_tender_files__type__agreement_
+msgid "Agreement "
+msgstr ""
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__apply_date
@@ -113,6 +153,9 @@ msgstr "Sözleşme Tarihi"
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_suppliertype__create_uid
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__create_uid
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_files__create_uid
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_items__create_uid
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_offers__create_uid
 #: model:ir.model.fields,field_description:procurement.field_procurement_tenderstatus__create_uid
 #: model:ir.model.fields,field_description:procurement.field_procurement_tendertype__create_uid
 msgid "Created by"
@@ -121,6 +164,9 @@ msgstr "Oluşturan"
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_suppliertype__create_date
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__create_date
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_files__create_date
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_items__create_date
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_offers__create_date
 #: model:ir.model.fields,field_description:procurement.field_procurement_tenderstatus__create_date
 #: model:ir.model.fields,field_description:procurement.field_procurement_tendertype__create_date
 msgid "Created on"
@@ -128,6 +174,7 @@ msgstr "Oluşturulan"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__currency_id
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_offers__currency_id
 msgid "Currency"
 msgstr "Para birimi"
 
@@ -149,6 +196,9 @@ msgstr "İhalenin başvurulduğu tarih."
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_suppliertype__display_name
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__display_name
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_files__display_name
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_items__display_name
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_offers__display_name
 #: model:ir.model.fields,field_description:procurement.field_procurement_tenderstatus__display_name
 #: model:ir.model.fields,field_description:procurement.field_procurement_tendertype__display_name
 msgid "Display Name"
@@ -158,6 +208,26 @@ msgstr "İsim"
 #: model_terms:ir.ui.view,arch_db:procurement.tender_search
 msgid "Done"
 msgstr "Tamamlandı"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_files__file
+msgid "File"
+msgstr "Dosya"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_files__file_name
+msgid "File Name"
+msgstr "Dosya Adı"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_files__type
+msgid "File Type"
+msgstr "Dosya Tipi"
+
+#. module: procurement
+#: model_terms:ir.ui.view,arch_db:procurement.tender_form
+msgid "Files"
+msgstr "Dosyalar"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__fiscal_year
@@ -187,10 +257,13 @@ msgstr "Gruplama"
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_suppliertype__id
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__id
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_files__id
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_items__id
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_offers__id
 #: model:ir.model.fields,field_description:procurement.field_procurement_tenderstatus__id
 #: model:ir.model.fields,field_description:procurement.field_procurement_tendertype__id
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__activity_exception_icon
@@ -206,52 +279,71 @@ msgstr ""
 #: model:ir.model.fields,help:procurement.field_procurement_tender__message_needaction
 #: model:ir.model.fields,help:procurement.field_procurement_tender__message_unread
 msgid "If checked, new messages require your attention."
-msgstr ""
+msgstr "İşaretliyse, yeni mesajlar dikkatinize sunulacak."
 
 #. module: procurement
 #: model:ir.model.fields,help:procurement.field_procurement_tender__message_has_error
 #: model:ir.model.fields,help:procurement.field_procurement_tender__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
-msgstr ""
+msgstr "İşaretliyse,bazı mesajlar gönderi hatası içermektedir."
+
+#. module: procurement
+#: model:ir.model.fields.selection,name:procurement.selection__procurement_tender_files__type__invoice_
+msgid "Invoice "
+msgstr "Fatura"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__message_is_follower
 msgid "Is Follower"
-msgstr ""
+msgstr "Takipçi mi"
+
+#. module: procurement
+#: model_terms:ir.ui.view,arch_db:procurement.tender_form
+msgid "Items"
+msgstr "Öğeler"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_suppliertype____last_update
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender____last_update
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_files____last_update
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_items____last_update
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_offers____last_update
 #: model:ir.model.fields,field_description:procurement.field_procurement_tenderstatus____last_update
 #: model:ir.model.fields,field_description:procurement.field_procurement_tendertype____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Son Güncelleme"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_suppliertype__write_uid
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__write_uid
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_files__write_uid
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_items__write_uid
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_offers__write_uid
 #: model:ir.model.fields,field_description:procurement.field_procurement_tenderstatus__write_uid
 #: model:ir.model.fields,field_description:procurement.field_procurement_tendertype__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Son Güncelleyen"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_suppliertype__write_date
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__write_date
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_files__write_date
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_items__write_date
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_offers__write_date
 #: model:ir.model.fields,field_description:procurement.field_procurement_tenderstatus__write_date
 #: model:ir.model.fields,field_description:procurement.field_procurement_tendertype__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Son Güncelleme"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__message_main_attachment_id
 msgid "Main Attachment"
-msgstr ""
+msgstr "Ana Ek"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__message_has_error
 msgid "Message Delivery error"
-msgstr ""
+msgstr "Mesaj Teslim hatası"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__message_ids
@@ -261,6 +353,7 @@ msgstr "Mesajlar"
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_suppliertype__name
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__name
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_files__name
 #: model:ir.model.fields,field_description:procurement.field_procurement_tenderstatus__name
 #: model:ir.model.fields,field_description:procurement.field_procurement_tendertype__name
 msgid "Name"
@@ -282,26 +375,32 @@ msgstr "Yeni"
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr ""
+msgstr "Sonraki Eylem Zaman Sınırı"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__activity_summary
 msgid "Next Activity Summary"
-msgstr ""
+msgstr "Sonraki Eylem Özeti"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__activity_type_id
 msgid "Next Activity Type"
-msgstr ""
+msgstr "Sonraki Eylem Türü"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__no
 msgid "No"
-msgstr "No"
+msgstr ""
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__notes
+#: model_terms:ir.ui.view,arch_db:procurement.tender_form
 msgid "Notes"
+msgstr "Notlar"
+
+#. module: procurement
+#: model_terms:ir.ui.view,arch_db:procurement.report_tender_overviews
+msgid "Notes :"
 msgstr "Notlar"
 
 #. module: procurement
@@ -317,17 +416,22 @@ msgstr "Hata Sayısı"
 #. module: procurement
 #: model:ir.model.fields,help:procurement.field_procurement_tender__message_needaction_counter
 msgid "Number of messages which requires an action"
-msgstr ""
+msgstr "Eylem gerektiren mesaj sayısı"
 
 #. module: procurement
 #: model:ir.model.fields,help:procurement.field_procurement_tender__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr ""
+msgstr "Teslimat hatası olan mesaj sayısı"
 
 #. module: procurement
 #: model:ir.model.fields,help:procurement.field_procurement_tender__message_unread_counter
 msgid "Number of unread messages"
-msgstr ""
+msgstr "Okunmamış mesaj sayısı"
+
+#. module: procurement
+#: model_terms:ir.ui.view,arch_db:procurement.tender_form
+msgid "Offers"
+msgstr "Teklifler"
 
 #. module: procurement
 #: model_terms:ir.ui.view,arch_db:procurement.tender_search
@@ -335,9 +439,19 @@ msgid "Ongoing"
 msgstr "Devam Eden"
 
 #. module: procurement
+#: model:ir.model.fields.selection,name:procurement.selection__procurement_tender_files__type__other
+msgid "Other"
+msgstr "Diğer"
+
+#. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__employee_id
 msgid "Personnel in charge"
 msgstr "İlgili Personel"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_offers__price
+msgid "Price"
+msgstr "Fiyat"
 
 #. module: procurement
 #: model:ir.ui.menu,name:procurement.procurement_root
@@ -345,9 +459,29 @@ msgid "Procurement"
 msgstr "Satın Alma"
 
 #. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_items__product_id
+msgid "Product"
+msgstr "Ürün"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_offers__proforma_file
+msgid "Proforma Invoice"
+msgstr "Proforma Fatura"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_offers__proforma_file_name
+msgid "Proforma Invoice Name"
+msgstr "Proforma Fatura İsmi"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_items__product_qty
+msgid "Quantity"
+msgstr "Miktar"
+
+#. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__responsible_staff
 msgid "Responsible Staff"
-msgstr "Sorumlu Personel"
+msgstr "Sorumlu Memur"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__activity_user_id
@@ -365,6 +499,16 @@ msgid "Search Tenders"
 msgstr "İhale Arama"
 
 #. module: procurement
+#: model:ir.model.fields,help:procurement.field_procurement_tender_offers__vat
+msgid "Select suitable VAT type"
+msgstr "Vergi türünü seçiniz"
+
+#. module: procurement
+#: model:ir.model.fields,help:procurement.field_procurement_tender_files__type
+msgid "Select suitable file type before upload"
+msgstr "Yüklemeden önce doğru dosya türünü seçiniz."
+
+#. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__status_id
 msgid "Status"
 msgstr "Durum"
@@ -377,6 +521,10 @@ msgid ""
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
+"Etkinliklerdeki aşamalar\n"
+"Zamanı Geçmiş: Tarihi geçmiş \n"
+"Bugün: Etkinlik günü bugün\n"
+"Planlanan: Gelecek etkinlikler."
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__supplier_type_id
@@ -385,6 +533,7 @@ msgstr "Tedarikçi Türü"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__supplier_id
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_offers__supplier_id
 msgid "Supplier"
 msgstr "Tedarikçi"
 
@@ -394,14 +543,55 @@ msgid "Supplier Type"
 msgstr "Tedarikçi Türü"
 
 #. module: procurement
-#: model:ir.model.fields,field_description:procurement.field_procurement_tender__technical_specification
-msgid "Technical Specification "
+#: model_terms:ir.ui.view,arch_db:procurement.report_tender_overviews
+#: model_terms:ir.ui.view,arch_db:procurement.tender_form
+msgid "Supplier:"
+msgstr "Tedarikçi"
+
+#. module: procurement
+#: model_terms:ir.ui.view,arch_db:procurement.report_tender_overviews
+msgid "Tax ID"
+msgstr "Vergi Kimliği"
+
+#. module: procurement
+#: model:ir.model.fields.selection,name:procurement.selection__procurement_tender_files__type__technical_specification
+msgid "Technical Specification"
 msgstr "Şartname"
 
 #. module: procurement
-#: model:ir.model.fields,field_description:procurement.field_procurement_tender__technical_specification_name
-msgid "Technical Specification File Name"
-msgstr "Şartname Dosya Adı"
+#: model:ir.model.fields.selection,name:procurement.selection__procurement_tender_files__type__tender_approval
+msgid "Tender Approval "
+msgstr "Teslim Formu"
+
+#. module: procurement
+#: model:ir.actions.report,name:procurement.report_tender_overview
+msgid "Tender Details"
+msgstr "İhale Detayları"
+
+#. module: procurement
+#: model:ir.model,name:procurement.model_procurement_tender_files
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__file_lines
+msgid "Tender Files"
+msgstr "İhale Dosyaları"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_files__tender_id
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_items__tender_id
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_offers__tender_id
+msgid "Tender ID"
+msgstr "İhale ID"
+
+#. module: procurement
+#: model:ir.model,name:procurement.model_procurement_tender_items
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__item_lines
+msgid "Tender Items"
+msgstr "İhale Kalemleri"
+
+#. module: procurement
+#: model:ir.model,name:procurement.model_procurement_tender_offers
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender__offer_lines
+msgid "Tender Offers"
+msgstr "Ihale Teklifleri"
 
 #. module: procurement
 #: model:ir.model,name:procurement.model_procurement_tender
@@ -435,7 +625,7 @@ msgstr "Toplam"
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__type_id
 msgid "Type"
-msgstr "Tip"
+msgstr "Tür"
 
 #. module: procurement
 #: model:ir.model.fields,help:procurement.field_procurement_tender__activity_exception_decoration
@@ -450,14 +640,29 @@ msgstr "Okunmamış Mesajlar"
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__message_unread_counter
 msgid "Unread Messages Counter"
-msgstr ""
+msgstr "Okunmamış Mesaj Sayacı"
+
+#. module: procurement
+#: model:ir.model.fields,field_description:procurement.field_procurement_tender_offers__vat
+msgid "VAT"
+msgstr "KDV"
+
+#. module: procurement
+#: model:ir.model.fields.selection,name:procurement.selection__procurement_tender_offers__vat__excluded
+msgid "VAT Excluded"
+msgstr "KDV Dahil Değil"
+
+#. module: procurement
+#: model:ir.model.fields.selection,name:procurement.selection__procurement_tender_offers__vat__included
+msgid "VAT Included"
+msgstr "KDV Dahil"
 
 #. module: procurement
 #: model:ir.model.fields,field_description:procurement.field_procurement_tender__website_message_ids
 msgid "Website Messages"
-msgstr ""
+msgstr "Websitesi Mesajları"
 
 #. module: procurement
 #: model:ir.model.fields,help:procurement.field_procurement_tender__website_message_ids
 msgid "Website communication history"
-msgstr ""
+msgstr "Web Sitesi iletişim geçmişi"
